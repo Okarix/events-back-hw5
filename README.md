@@ -46,7 +46,7 @@ To get started with this project, follow these steps:
 
 - [x] Registration with indication of the city
 - [x] Login
-- [ ] A list of events in the user's city is displayed in `/api/events` for an authorized user
+- [x] A list of events in the user's city is displayed in `/api/events` for an authorized user
 
 ## 🥇 Hard Level
 

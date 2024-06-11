@@ -6,8 +6,11 @@ class EventService {
 		return await EventModel.findById(id).exec();
 	}
 
-	async getEvents(): Promise<IEvent[]> {
-		return await EventModel.find().exec();
+	async getEvents(page: number = 1, sort: string = 'desc'): Promise<IEvent[]> {
+		var perPage = 10;
+		const skip = perPage * (page - 1);
+
+		return await EventModel.find().limit(perPage).skip(skip).sort(sort).exec();
 	}
 
 	async getEventsByCity(city: string): Promise<IEvent[]> {

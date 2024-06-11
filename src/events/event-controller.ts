@@ -21,7 +21,11 @@ class EventController {
 
 	getEvents = async (req: Request, res: Response): Promise<void> => {
 		try {
-			const events = await this.eventService.getEvents();
+			const { page = 1, sort = 'desc' } = req.query;
+			const pageNumber = parseInt(page as string, 10);
+			const sortDir = sort === 'asc' ? 'asc' : 'desc';
+
+			const events = await this.eventService.getEvents(pageNumber, sortDir);
 			res.status(200).json(events);
 		} catch (error: any) {
 			res.status(500).send({ error: error.message });
