@@ -52,8 +52,8 @@ To get started with this project, follow these steps:
 
 ### Tasks
 
-- [ ] Add paginations
-- [ ] Sorting for `/api/events?sortBy=rating&sortDirection=desc`
+- [x] Add paginations
+- [x] Sorting for `/api/events?sortBy=rating&sortDirection=desc`
 
 ### 📂 Explanation of Structure
 
