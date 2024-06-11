@@ -44,7 +44,7 @@ To get started with this project, follow these steps:
 
 ### Tasks
 
-- [ ] Registration with indication of the city
+- [x] Registration with indication of the city
 - [x] Login
 - [ ] A list of events in the user's city is displayed in `/api/events` for an authorized user
 
